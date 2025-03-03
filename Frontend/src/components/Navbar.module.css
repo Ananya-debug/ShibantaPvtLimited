@@ -1,0 +1,146 @@
+/* Navbar Styles */
+.navbar {
+     background: linear-gradient(180deg, rgb(14, 14, 13), #000000); /* Gradient background */
+     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+     padding: 12px 20px;
+     position: sticky;
+     top: 0;
+     z-index: 1000;
+   }
+   
+   /* Navbar Container */
+   .navContainer {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     max-width: 1200px;
+     margin: auto;
+   }
+   
+   /* Logo & Company Name */
+   .navLogo {
+     display: flex;
+     align-items: center;
+     font-size: 22px;
+     font-weight: bold;
+     color: rgb(255, 255, 255);
+   }
+   
+   .logo {
+     height: 45px;
+     width: 45px;
+     margin-right: 12px;
+   }
+   
+   /* Navigation Links */
+   .navLinks {
+     list-style: none;
+     display: flex;
+     gap: 24px;
+   }
+   
+   .navLinks li {
+     position: relative;
+   }
+   
+   .navLinks li button {
+    margin-bottom: 0;
+    padding: 0;
+    background: none;
+  border: none;
+     text-decoration: none;
+     color: rgb(255, 255, 255);
+     font-size: 16px;
+     font-weight: 500;
+     transition: color 0.3s ease-in-out;
+     padding-bottom: 5px;
+   }
+   
+   /* Underline Hover Effect */
+   .navLinks li button::after {
+     content: "";
+     position: absolute;
+     left: 0;
+     bottom: -2px;
+     width: 100%;
+     height: 2px;
+     background: #ffffff;
+     transform: scaleX(0);
+     transition: transform 0.3s ease-in-out;
+   }
+   
+   .navLinks li button:hover::after {
+     transform: scaleX(1);
+   }
+   
+   .navLinks li button:hover {
+     color: #878282;
+   }
+   
+   /* Special Button Style */
+   .specialLink {
+     background: rgb(0, 0, 0);
+     color: #ff7e5f !important;
+     padding: 8px 14px;
+     border-radius: 20px;
+     font-weight: bold;
+     transition: all 0.3s ease-in-out;
+   }
+   
+   .specialLink:hover {
+     background: #222;
+     color: white !important;
+   }
+   
+   /* Mobile Menu Button */
+   .menuBtn {
+     display: none;
+     background: none;
+     border: none;
+     cursor: pointer;
+     color: white;
+   }
+   
+   /* Responsive Design */
+   @media (max-width: 768px) {
+     .navLinks {
+       display: none;
+       flex-direction: column;
+       position: absolute;
+       top: 60px;
+       right: 20px;
+       background: rgba(255, 255, 255, 0.95);
+       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+       padding: 12px;
+       width: 180px;
+       border-radius: 5px;
+       animation: slideIn 0.3s ease-in-out;
+     }
+   
+     .open {
+       display: flex;
+     }
+   
+     .navLinks li a {
+       color: #ff7e5f;
+       padding: 10px;
+       display: block;
+     }
+   
+     .menuBtn {
+       display: block;
+     }
+   }
+   
+   /* Slide-in Animation */
+   @keyframes slideIn {
+     from {
+       transform: translateY(-10px);
+       opacity: 0;
+     }
+     to {
+       transform: translateY(0);
+       opacity: 1;
+     }
+   }
+   

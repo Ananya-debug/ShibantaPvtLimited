@@ -1,0 +1,114 @@
+/* Footer Styles */
+.footer {
+     background-color: #121212;
+     color: white;
+     padding: 30px 20px;
+     text-align: center; /* Centers all content */
+   }
+   
+   /* Footer Container */
+   .footerContainer {
+     display: flex;
+     flex-direction: column; /* Stack items vertically */
+     align-items: center;
+     max-width: 1200px;
+     margin: auto;
+   }
+   
+   /* Left Section - Logo & Name */
+   .footerLogo {
+     display: flex;
+     align-items: center;
+     font-size: 22px;
+     font-weight: bold;
+     margin-bottom: 15px; /* Add spacing */
+   }
+   
+   .logo {
+     height: 55px; /* Increased logo size */
+     width: 55px;
+     margin-right: 12px;
+   }
+   
+   /* Center Section - Stylish Quick Links */
+   .footerLinks {
+     list-style: none;
+     display: flex;
+     gap: 30px;
+     margin: 20px 0;
+     padding: 0;
+   }
+   
+   .footerLinks li {
+     display: inline-block;
+     position: relative;
+   }
+   
+   .footerLinks li a {
+     text-decoration: none;
+     color: white;
+     font-size: 16px;
+     font-weight: 500;
+     transition: color 0.3s ease-in-out;
+     padding-bottom: 5px;
+   }
+   
+   /* Underline Hover Effect */
+   .footerLinks li a::after {
+     content: "";
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     height: 2px;
+     background: #ff7e5f;
+     transform: scaleX(0);
+     transition: transform 0.3s ease-in-out;
+   }
+   
+   .footerLinks li a:hover::after {
+     transform: scaleX(1);
+   }
+   
+   .footerLinks li a:hover {
+     color: #ff7e5f;
+   }
+   
+   /* Right Section - Social Media Icons */
+   .socialIcons {
+     margin: 10px 0;
+   }
+   
+   .socialIcons a {
+     color: white;
+     font-size: 22px;
+     margin: 0 8px;
+     transition: color 0.3s ease-in-out;
+   }
+   
+   .socialIcons a:hover {
+     color: #ff7e5f;
+   }
+   
+   /* Bottom Section */
+   .footerBottom {
+     text-align: center;
+     margin-top: 20px;
+     font-size: 16px;
+     color: #aaa;
+   }
+   
+   /* Highlight Developer & Phone Number */
+   .highlight {
+     color: #ff7e5f;
+     font-weight: bold;
+   }
+   
+   /* Responsive Design */
+   @media (max-width: 768px) {
+     .footerLinks {
+       flex-direction: column;
+       gap: 10px;
+     }
+   }
+   

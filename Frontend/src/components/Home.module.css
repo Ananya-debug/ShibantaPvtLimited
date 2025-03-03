@@ -1,0 +1,65 @@
+/* Home Page Container */
+.homeContainer {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(
+    to bottom,
+    #f5fff0,
+    #ffffff
+  ); /* Light green to white */
+  color: #333;
+}
+
+/* Title */
+.title {
+  font-family: "Monomakh", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+  font-weight: bold;
+  color: #2e7d32; /* Dark Green */
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Centered Carousel Container */
+.carouselContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Carousel Styling */
+.carousel {
+  width: 90%; /* Adjust carousel width */
+  max-width: 900px; /* Maximum width for better responsiveness */
+  position: relative; /* Needed for positioning indicators */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Carousel Images */
+.carousel img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel img:hover {
+  transform: scale(1.02);
+}
+
+/* Move Indicators Outside */
+.carousel .carousel .control-dots {
+  position: absolute;
+  bottom: -30px !important; /* Moves the dots outside the carousel */
+}

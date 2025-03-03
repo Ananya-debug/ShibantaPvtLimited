@@ -1,0 +1,85 @@
+/* Main Container */
+.teContainer {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(
+    to bottom,
+    #e8f5e9,
+    #ffffff
+  ); /* Light green to white */
+  color: #333;
+}
+
+/* Title */
+.title {
+  font-family: "Monomakh", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2e7d32; /* Dark Green */
+}
+
+/* Image Section */
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.teImage {
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.teImage:hover {
+  transform: scale(1.05);
+}
+
+/* Subtitle */
+.subtitle {
+     font-family: "Cinzel Decorative", serif;
+     font-weight: 700;
+     font-style: normal;
+  font-size: 32px;
+  font-weight: bold;
+  color: #e3249d;
+  margin-bottom: 20px;
+}
+
+/* Bio Text */
+.bio {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: auto;
+  color: #444;
+  padding: 10px 20px;
+}
+
+.bio span {
+  font-weight: bold;
+  color: #1b5e20;
+}
+
+/* Explore Button */
+.exploreButton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: #2e7d32;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.exploreButton:hover {
+  background: #1b5e20;
+}
