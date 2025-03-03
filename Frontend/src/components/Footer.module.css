@@ -92,6 +92,9 @@
    
    /* Bottom Section */
    .footerBottom {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
      text-align: center;
      margin-top: 20px;
      font-size: 16px;
@@ -110,5 +113,11 @@
        flex-direction: column;
        gap: 10px;
      }
+     .footerBottom {
+      text-align: center;
+      margin-top: 17px;
+      font-size: 14px;
+      color: #aaa;
+    }
    }
    

@@ -83,3 +83,18 @@
 .exploreButton:hover {
   background: #1b5e20;
 }
+
+@media (max-width: 768px) {
+.teContainer {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 30px;
+  background: linear-gradient(
+    to bottom,
+    #e8f5e9,
+    #ffffff
+  ); /* Light green to white */
+  color: #333;
+}
+}
+

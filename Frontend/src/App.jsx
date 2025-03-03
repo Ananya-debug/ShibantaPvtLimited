@@ -5,10 +5,10 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Navbar /> {/* Navbar will handle content rendering */}
       <Footer></Footer>
-    </div>
+    </>
   );
 };
 
