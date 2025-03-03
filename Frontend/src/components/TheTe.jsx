@@ -4,7 +4,7 @@ import styles from "./TheTe.module.css";
 const TheTeGlobal = () => {
   return (
     <div className={styles.teContainer}>
-      <h1 className={styles.title}>Welcome to The Te Global</h1>
+      <h1 className={styles.title}>Introducing <u>The Te Global</u></h1>
 
       {/* Centered Image */}
       <div className={styles.imageContainer}>

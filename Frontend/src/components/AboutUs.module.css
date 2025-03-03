@@ -75,6 +75,15 @@
   color: #1b5e20;
 }
 @media (max-width: 768px) {
+  .title {
+    font-family: "Monomakh", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2e7d32; /* Dark Green */
+  }
 .aboutContainer {
   text-align: center;
   padding-top: 5px;
