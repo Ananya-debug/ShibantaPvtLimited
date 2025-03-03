@@ -5,7 +5,7 @@ const TheTeGlobal = () => {
   return (
     <div className={styles.teContainer}>
       <h1 className={styles.title}>
-        Presenting <u>The Te Global</u>
+        Presenting <span className={styles.teheading}><u>The Te Global</u></span>
       </h1>
 
       {/* Centered Image */}
