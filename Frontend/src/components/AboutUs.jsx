@@ -7,11 +7,11 @@ const AboutUs = () => {
       <h1 className={styles.title}>The Shibanta Vision</h1>
 
       <div className={styles.owners}>
-        {/* Owner 1 */}
-        <div className={styles.owner}>
+        
+        {/* <div className={styles.owner}>
           <img src="/shibajee.jpg" alt="Shibajee Chakraborty" className={styles.ownerImage} />
           <h2 className={styles.ownerName}>Shibajee Chakraborty</h2>
-        </div>
+        </div> */}
 
         {/* Owner 2 */}
         <div className={styles.owner}>

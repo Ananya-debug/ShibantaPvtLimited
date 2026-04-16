@@ -29,7 +29,7 @@ const TheTeGlobal = () => {
       </p>
 
       {/* Explore Button */}
-      <a href="https://g.co/kgs/ooHzsAZ" className={styles.exploreButton}>
+      <a href="https://www.theteglobal.com/" className={styles.exploreButton}>
         Explore Our Teas
       </a>
     </div>
